@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="UTF-8"><title>LinkedIn AI Commenter</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <div class="wrap">
+    <div class="brand">✦ LinkedIn AI Commenter</div>
+    <div class="sub">Generate a natural comment for the LinkedIn post you are viewing.</div>
+    <label>Style</label>
+    <select id="style">
+      <option value="professional">Professional</option>
+      <option value="friendly">Friendly</option>
+      <option value="networking">Networking</option>
+      <option value="expert">Expert / Industry</option>
+      <option value="short">Short & natural</option>
+      <option value="question">Conversation starter</option>
+    </select>
+    <label>Extra instruction <span>(optional)</span></label>
+    <textarea id="instruction" placeholder="e.g. Keep it under 25 words and avoid sounding salesy."></textarea>
+    <button id="generate">Generate comments</button>
+    <div id="status"></div>
+    <div id="results"></div>
+    <div class="hint">Tip: You can also use the ✨ button beside LinkedIn comment boxes.</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
